@@ -4,7 +4,7 @@ const CACHE_NAME = 'sbfm-radio-v1';
 // List of files to be cached
 const urlsToCache = [
   '/',
-  '/live.html',
+  '/live',
   '/css/share-style.css',
   '/js/lunaradio-cors.js',
   'https://cdn4.mbahnunungonline.net/img/sbradio.png',

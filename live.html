@@ -34,37 +34,38 @@
 
     <link href="https://suarabanyuwangi.github.io/v5//css/share-style.css" rel="stylesheet">
     <link rel="manifest" href="/manifest.json">	
-	<style>
-		html, body {
-			margin:0;
-			padding:0;
-			overflow: hidden;
-			width:100%;
-			height:100%;
-		}
-	</style>
+	
 </head>
-<body>	
-	<div style="width:100%;height:100%;background: #000000 url(https://i.imgur.com/B0PYHAq.jpg) bottom / cover no-repeat;">
+<body style="margin:0px">
+
+	<style>
+		.digit {width: 100%;height: auto;background: transparent;display: flex;justify-content: left;align-items: top;position: fixed;z-index: 999!important;bottom: 0.5rem;left: 1rem;color: #fff!important;font-family: Saira Condensed;text-decoration: none;}
+		.digit a:link {color: #fff;text-decoration: none;}
+		.digit a:hover {color: #fff;text-decoration: none;}
+		.digit a:visited {color: #fff;text-decoration: none;}
+		#lunaradiocoverwrapper {margin-top:10px!important;}
+		.lunaradiovisualizericon, .lunaradioplayicon, .lunaradioliveicon {margin-top:-10px!important;}
+	</style>
 	 
-	<script src="js/jquery-3.2.1.min.js"></script>
-	<script src="https://cdn1.mbahnunungonline.net/js/lunaradio-cors.js"></script>
-	 <div id="player"></div>
-    <script>
-     $("#player").lunaradio({
-      radioname: "FM 97.2 MHz", 
+	<div id="lunaradio" style='width:100%; height:100%;background-image: url("img/FONDO.jpg"); background-repeat:no-repeat; background-size: cover; background-position: center;-webkit-border-top-left-radius: 0px;-webkit-border-top-right-radius: 0px;-webkit-border-bottom-right-radius: 0px;-webkit-border-bottom-left-radius: 0px;-moz-border-radius-topleft: 0px;-moz-border-radius-topright: 0px;-moz-border-radius-bottomright: 0px;-moz-border-radius-bottomleft: 0px;border-top-left-radius: 0px;border-top-right-radius: 0px;border-bottom-right-radius: 0px;border-bottom-left-radius: 0px;border: none;'>
+	<script src="js/jquery-3.2.1.min.js" type="3bc5e4e5245e387f3290c38f-text/javascript"></script>
+	<script src="https://cdn.bintangtenggarafm.com/js/lunaradio-sincors.js" type="3bc5e4e5245e387f3290c38f-text/javascript"></script>
+	<div id="lunaradio" style="width:100%; height:550px;"></div>
+	<script type="3bc5e4e5245e387f3290c38f-text/javascript">
+     $("#lunaradio").lunaradio({
+      radioname: "FM 97.2 MHz"", 
       streamurl: "https://sv3.stri.my.id:5423", 
       streamtype: "shoutcast2", 
       icecastmountpoint: "/radio",
-      coverimage: "https://cdn1.mbahnunungonline.net/img/SB_Cover.png",
-      volume:"99", autoplay:"true", 
-      shoutcastpath: "/radio.mp3?type=https&amp;nocache=377274",
+      coverimage: "https://cdn.bintangtenggarafm.com/img/7N6MORe.png?v=1.0.0.1",
+      volume:"100", autoplay:"true", 
+      shoutcastpath: "/rbtfm?type=https&amp;nocache=377274",
       shoutcastid: "1", 
       onlycoverimage:"false", coverstyle:"square", usevisualizer:"real", visualizertype:"8",
       userinterface:"big", backgroundcolor:"", fontcolor:"#ffffff", hightlightcolor: "#5f87c5", fontname:"ZCOOL XiaoWei", googlefont:"ZCOOL+XiaoWei", fontratio:"0.4", scroll:"true", displayliveicon:"true", metadatatechnic: "", ownmetadataurl: "", corsproxy: "", usestreamcorsproxy: "false", visualizeropacity:"1.0", itunestoken: "1000lIPN",  multicolorvisualizer:"true", color1:"#00FF00", color2:"#ffff00", color3:"#FF1F6F", color4:"#FF1F6F", metadatainterval:"20000", 
     });
   </script>
- </div>
+</div>
 	 <div class="rss">
 		<button class="shareButton main">
 		  <svg  class="share" style="width:24px;height:24px" viewBox="0 0 448 512"><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z"/></svg><svg class="check" style="width:24px;height:24px" viewBox="0 0 24 24"><path  d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" /></svg><svg class="close" style="width:24px;height:24px" viewBox="0 0 24 24"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg></button>

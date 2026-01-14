@@ -31,7 +31,7 @@
     <link rel="dns-prefetch" href="https://google.com/"/>
     <link rel="icon" type="image/png" href="https://static.mytuner.mobi/media/tvos_radios/528/suara-banyuwangi.cba7aa74.png" />
     <link href="https://suarabanyuwangi.github.io/v5//css/share-style.css" rel="stylesheet">
-    <link rel="manifest" href="/manifest.json">	
+    <link rel="manifest" href="https://suarabanyuwangi.github.io/v5/manifest.json">	
 </head>
 <body style="margin:0px">
 
@@ -89,7 +89,7 @@
 	<script>
         if ('serviceWorker' in navigator) {
           window.addEventListener('load', function() {
-            navigator.serviceWorker.register('/service-worker.js')
+            navigator.serviceWorker.register('https://suarabanyuwangi.github.io/v5/service-worker.js')
               .then(function(registration) {
                 console.log('Service Worker registrado com sucesso:', registration);
               }, function(err) {

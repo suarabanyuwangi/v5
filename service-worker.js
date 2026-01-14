@@ -7,7 +7,7 @@ const urlsToCache = [
   '/live.html',
   '/css/share-style.css',
   '/js/lunaradio-cors.js',
-  '/img/cover.png',
+  'https://cdn4.mbahnunungonline.net/img/sbradio.png',
   // Add other resources you want to cache here
 ];
 

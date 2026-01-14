@@ -89,5 +89,17 @@
 	</div>
 <script src="js/rocket-loader.min.js" data-cf-settings="3bc5e4e5245e387f3290c38f-|49" defer=""></script>
 <script  src="js/share-script.js"></script>
+	<script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/service-worker.js')
+              .then(function(registration) {
+                console.log('Service Worker registrado com sucesso:', registration);
+              }, function(err) {
+                console.log('Falha ao registrar o Service Worker:', err);
+              });
+          });
+        }
+      </script>	
 </body>
 </html>
